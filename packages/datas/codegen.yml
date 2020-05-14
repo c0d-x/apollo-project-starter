@@ -1,0 +1,17 @@
+#
+# This is @graphql-codegen Config file
+#
+overwrite: true
+schema: ./src/schema.ts
+require:
+  - ts-node/register/transpile-only
+  - tsconfig-paths/register
+generates:
+  ./src/codegen/generated-models.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      contextType: "@graphql-modules/core#ModuleContext"
+      namingConvention:
+        enumValues: keep

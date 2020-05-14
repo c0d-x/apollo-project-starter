@@ -1,0 +1,6 @@
+# When we want a different enum value for your internal code and the public API,
+# then define the mapping in the resolver. Used 'UP' and 'DOWN' on purpose as an example
+enum VoteEnum {
+  UP
+  DOWN
+}

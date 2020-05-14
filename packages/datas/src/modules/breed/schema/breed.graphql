@@ -1,0 +1,25 @@
+type Breed {
+  id: String
+  name: String
+  description: String
+  origin: String
+  mood: String
+  lifeSpan: String
+  rare: Boolean
+  hypoallergenic: Boolean
+  hairless: Boolean
+  ratings: BreedRatings
+  externalLink: String
+}
+
+type BreedRatings {
+  affection: Int
+  energy: Int
+  intelligence: Int
+  sociability: Int
+  vocality: Int
+}
+
+extend type Image {
+  breeds: [Breed]
+}

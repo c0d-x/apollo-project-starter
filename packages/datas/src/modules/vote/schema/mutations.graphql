@@ -1,0 +1,8 @@
+type Mutation {
+  createVote(input: VoteCreateInput!): Vote
+}
+
+input VoteCreateInput {
+  imageId: String!
+  vote: VoteEnum
+}

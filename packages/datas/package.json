@@ -1,0 +1,28 @@
+{
+  "name": "project-starter-datas",
+  "version": "1.0.0",
+  "description": "The project starter data models",
+  "private": true,
+  "scripts": {
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch",
+    "postinstall": "yarn codegen"
+  },
+  "dependencies": {
+    "project-starter-datasources": "1.0.0",
+    "@graphql-modules/core": "^0.7.13",
+    "@types/node": "^13.7.1",
+    "@graphql-codegen/cli": "^1.8.2",
+    "@graphql-codegen/typescript": "^1.8.2",
+    "@graphql-codegen/typescript-operations": "^1.8.3",
+    "@graphql-codegen/typescript-react-apollo": "^1.8.3",
+    "@graphql-codegen/typescript-resolvers": "^1.8.2",
+    "graphql": "^14.5.8",
+    "graphql-scalars": "^1.0.6",
+    "graphql-toolkit": "^0.7.5",
+    "lodash": "^4.17.15",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.5"
+  }
+}

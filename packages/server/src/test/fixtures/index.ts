@@ -1,0 +1,9 @@
+export { categoriesFixtures } from './categories';
+export { breedsFixtures } from './breeds';
+export { imagesFixtures } from './images';
+export { favouritesFixtures } from './favourite/list';
+export { favouriteFixture } from './favourite/get';
+export { createFavouriteFixture } from './favourite/create';
+export { removeFavouriteFixture } from './favourite/remove';
+export { createVoteFixture } from './vote/create';
+export { voteFixture } from './vote/get';

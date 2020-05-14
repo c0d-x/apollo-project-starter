@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server - e2e Breeds should get all breeds 1`] = `
+Object {
+  "getBreeds": Array [
+    Object {
+      "description": "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
+      "externalLink": "https://en.wikipedia.org/wiki/Abyssinian_(cat)",
+      "hairless": false,
+      "hypoallergenic": false,
+      "id": "abys",
+      "lifeSpan": "14 - 15",
+      "mood": "Active, Energetic, Independent, Intelligent, Gentle",
+      "name": "Abyssinian",
+      "origin": "Egypt",
+      "rare": false,
+      "ratings": Object {
+        "affection": 5,
+        "energy": 5,
+        "intelligence": 5,
+        "sociability": 5,
+        "vocality": 1,
+      },
+    },
+    Object {
+      "description": "Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.",
+      "externalLink": "https://en.wikipedia.org/wiki/Aegean_cat",
+      "hairless": false,
+      "hypoallergenic": false,
+      "id": "aege",
+      "lifeSpan": "9 - 12",
+      "mood": "Affectionate, Social, Intelligent, Playful, Active",
+      "name": "Aegean",
+      "origin": "Greece",
+      "rare": false,
+      "ratings": Object {
+        "affection": 4,
+        "energy": 3,
+        "intelligence": 3,
+        "sociability": 4,
+        "vocality": 3,
+      },
+    },
+    Object {
+      "description": "American Bobtails are loving and incredibly intelligent cats possessing a distinctive wild appearance. They are extremely interactive cats that bond with their human family with great devotion.",
+      "externalLink": "https://en.wikipedia.org/wiki/American_Bobtail",
+      "hairless": false,
+      "hypoallergenic": false,
+      "id": "abob",
+      "lifeSpan": "11 - 15",
+      "mood": "Intelligent, Interactive, Lively, Playful, Sensitive",
+      "name": "American Bobtail",
+      "origin": "United States",
+      "rare": false,
+      "ratings": Object {
+        "affection": 5,
+        "energy": 3,
+        "intelligence": 5,
+        "sociability": 3,
+        "vocality": 3,
+      },
+    },
+    Object {
+      "description": "Distinguished by truly unique ears that curl back in a graceful arc, offering an alert, perky, happily surprised expression, they cause people to break out into a big smile when viewing their first Curl. Curls are very people-oriented, faithful, affectionate soulmates, adjusting remarkably fast to other pets, children, and new situations.",
+      "externalLink": "https://en.wikipedia.org/wiki/American_Curl",
+      "hairless": false,
+      "hypoallergenic": false,
+      "id": "acur",
+      "lifeSpan": "12 - 16",
+      "mood": "Affectionate, Curious, Intelligent, Interactive, Lively, Playful, Social",
+      "name": "American Curl",
+      "origin": "United States",
+      "rare": false,
+      "ratings": Object {
+        "affection": 5,
+        "energy": 3,
+        "intelligence": 3,
+        "sociability": 3,
+        "vocality": 3,
+      },
+    },
+    Object {
+      "description": "The American Shorthair is known for its longevity, robust health, good looks, sweet personality, and amiability with children, dogs, and other pets.",
+      "externalLink": "https://en.wikipedia.org/wiki/American_Shorthair",
+      "hairless": false,
+      "hypoallergenic": false,
+      "id": "asho",
+      "lifeSpan": "15 - 17",
+      "mood": "Active, Curious, Easy Going, Playful, Calm",
+      "name": "American Shorthair",
+      "origin": "United States",
+      "rare": false,
+      "ratings": Object {
+        "affection": 5,
+        "energy": 3,
+        "intelligence": 3,
+        "sociability": 4,
+        "vocality": 3,
+      },
+    },
+  ],
+}
+`;
+
+exports[`Server - e2e Categories should get all categories 1`] = `
+Object {
+  "getCategories": Array [
+    Object {
+      "id": "5",
+      "name": "boxes",
+    },
+    Object {
+      "id": "15",
+      "name": "clothes",
+    },
+    Object {
+      "id": "1",
+      "name": "hats",
+    },
+    Object {
+      "id": "14",
+      "name": "sinks",
+    },
+    Object {
+      "id": "2",
+      "name": "space",
+    },
+    Object {
+      "id": "4",
+      "name": "sunglasses",
+    },
+    Object {
+      "id": "7",
+      "name": "ties",
+    },
+  ],
+}
+`;
+
+exports[`Server - e2e Favourites should create favourite 1`] = `
+Object {
+  "createFavourite": Object {
+    "id": "919",
+  },
+}
+`;
+
+exports[`Server - e2e Favourites should get a favourite by id 1`] = `
+Object {
+  "getFavourite": Object {
+    "createdAt": null,
+    "id": "4uf",
+    "image": Object {
+      "breeds": Array [],
+      "id": "4uf",
+      "url": "https://cdn2.thecatapi.com/images/4uf.jpg",
+    },
+    "reference": null,
+  },
+}
+`;
+
+exports[`Server - e2e Favourites should get all favourites 1`] = `
+Object {
+  "getFavourites": Array [
+    Object {
+      "createdAt": "2018-10-26T05:40:32.000Z",
+      "id": "915",
+      "image": Object {
+        "breeds": Array [],
+        "id": "11ByOV3dd",
+        "url": "https://cdn2.thecatapi.com/images/11ByOV3dd.jpg",
+      },
+      "reference": "demo-22f3fb",
+    },
+    Object {
+      "createdAt": "2018-10-26T05:54:34.000Z",
+      "id": "918",
+      "image": Object {
+        "breeds": Array [],
+        "id": "MTY4NzQ4Nw",
+        "url": "https://cdn2.thecatapi.com/images/MTY4NzQ4Nw.jpg",
+      },
+      "reference": "demo-7bbd54",
+    },
+    Object {
+      "createdAt": "2018-10-26T06:33:19.000Z",
+      "id": "919",
+      "image": Object {
+        "breeds": Array [],
+        "id": "26e",
+        "url": "https://cdn2.thecatapi.com/images/26e.jpg",
+      },
+      "reference": "demo-320058",
+    },
+    Object {
+      "createdAt": "2018-10-26T06:33:26.000Z",
+      "id": "920",
+      "image": Object {
+        "breeds": Array [],
+        "id": "3i4",
+        "url": "https://cdn2.thecatapi.com/images/3i4.jpg",
+      },
+      "reference": "demo-320058",
+    },
+  ],
+}
+`;
+
+exports[`Server - e2e Favourites should remove a favourite and return list of favourites 1`] = `
+Object {
+  "removeFavourite": Object {
+    "id": "915",
+  },
+}
+`;
+
+exports[`Server - e2e Images should get all images 1`] = `
+Object {
+  "getImages": Array [
+    Object {
+      "breeds": Array [],
+      "favouriteId": null,
+      "id": "4uf",
+      "url": "https://cdn2.thecatapi.com/images/4uf.jpg",
+      "vote": Object {
+        "id": "189091",
+        "value": "UP",
+      },
+    },
+    Object {
+      "breeds": Array [],
+      "favouriteId": "123456",
+      "id": "9qr",
+      "url": "https://cdn2.thecatapi.com/images/9qr.png",
+      "vote": Object {
+        "id": "189092",
+        "value": "DOWN",
+      },
+    },
+    Object {
+      "breeds": Array [],
+      "favouriteId": null,
+      "id": "ad9",
+      "url": "https://cdn2.thecatapi.com/images/ad9.jpg",
+      "vote": null,
+    },
+    Object {
+      "breeds": Array [],
+      "favouriteId": null,
+      "id": "MTU1NDcwOA",
+      "url": "https://cdn2.thecatapi.com/images/MTU1NDcwOA.jpg",
+      "vote": null,
+    },
+    Object {
+      "breeds": Array [
+        Object {
+          "description": "The Exotic Shorthair is a gentle friendly cat that has the same personality as the Persian. They love having fun, don’t mind the company of other cats and dogs, also love to curl up for a sleep in a safe place. Exotics love their own people, but around strangers they are cautious at first. Given time, they usually warm up to visitors.",
+          "externalLink": "https://en.wikipedia.org/wiki/Exotic_Shorthair",
+          "hairless": false,
+          "hypoallergenic": false,
+          "id": "esho",
+          "mood": "Affectionate, Sweet, Loyal, Quiet, Peaceful",
+          "name": "Exotic Shorthair",
+          "origin": "United States",
+          "rare": false,
+        },
+      ],
+      "favouriteId": null,
+      "id": "y61B6bFCh",
+      "url": "https://cdn2.thecatapi.com/images/y61B6bFCh.jpg",
+      "vote": null,
+    },
+  ],
+}
+`;
+
+exports[`Server - e2e Votes should create a vote 1`] = `
+Object {
+  "createVote": Object {
+    "createdAt": "2020-04-27T18:22:30.000Z",
+    "id": "187920",
+    "imageId": "asf2",
+    "value": "UP",
+  },
+}
+`;

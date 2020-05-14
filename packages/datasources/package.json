@@ -1,0 +1,17 @@
+{
+    "name": "project-starter-datasources",
+    "version": "1.0.0",
+    "description": "The project starter datasources (API, DB etc)",
+    "private": true,
+    "dependencies": {
+        "project-starter-datas": "1.0.0",
+        "@graphql-modules/di": "^0.7.14",
+        "apollo-datasource-rest": "^0.7.0",
+        "apollo-server-errors": "^2.3.4",
+        "dotenv": "^8.2.0", 
+        "qs": "^6.9.1",
+        "ts-node": "^8.6.2",
+        "typescript": "^3.7.5",
+        "reflect-metadata": "^0.1.13"
+    }
+}

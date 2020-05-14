@@ -1,0 +1,10 @@
+# Note: the breeds property is extended from BreedModule schema
+type Image {
+  id: String!
+  url: String!
+  favouriteId: String
+}
+
+extend type Favourite {
+  image: Image
+}

@@ -1,0 +1,3 @@
+type Query {
+  getImages(breedId: String, limit: Int, page: Int): [Image]
+}

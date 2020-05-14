@@ -1,0 +1,12 @@
+scalar Date
+
+type Vote {
+  id: String
+  createdAt: Date
+  imageId: String
+  value: VoteEnum
+}
+
+extend type Image {
+  vote: Vote
+}

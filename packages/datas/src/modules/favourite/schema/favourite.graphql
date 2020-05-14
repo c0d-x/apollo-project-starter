@@ -1,0 +1,8 @@
+scalar Date
+
+# Note: the image property is extended from ImageModule schema
+type Favourite {
+  id: String
+  createdAt: Date
+  reference: String
+}

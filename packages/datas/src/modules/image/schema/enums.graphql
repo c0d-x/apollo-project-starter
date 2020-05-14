@@ -1,0 +1,5 @@
+enum OrderEnum {
+  ASC,
+  DESC,
+  RAND,
+}
