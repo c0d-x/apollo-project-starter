@@ -102,8 +102,7 @@ export class CatAPI extends Client {
   /**
      * Get a favourite
      *
-     * i don't call this method anymore as we have to rebuild a full favourite object
-     * from partial datas by making multiple calls, which is too slow.
+     * https://forum.thatapiguy.com/t/questions-feedback-bugs-for-the-cat-or-dog-apis/15/26
      *
      * @async
      * @param {string} favouriteId
@@ -111,12 +110,8 @@ export class CatAPI extends Client {
     */
   async getFavourite(favouriteId: string): Promise<Types.FavouriteTransformerType> {
     const favourite = await this.get(`favourites/${favouriteId}`);
-    const image = await this.getImage(favourite.image_id);
 
-    return FavouriteTransformer.transform({
-      ...favourite,
-      image,
-    });
+    return FavouriteTransformer.transform(favourite);
   }
 
   /**
@@ -132,8 +127,7 @@ export class CatAPI extends Client {
       sub_id: SUB_ID,
     });
 
-    // return this.getFavourite(response.id);
-    return { id: response.id };
+    return this.getFavourite(response.id);
   }
 
   /**

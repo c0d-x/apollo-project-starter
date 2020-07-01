@@ -1,5 +1,5 @@
 type Mutation {
-  createFavourite(input: FavouriteCreateInput!): PartialFavourite
+  createFavourite(input: FavouriteCreateInput!): Favourite
   removeFavourite(input: FavouriteRemoveInput!): PartialFavourite
 }
 

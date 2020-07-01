@@ -80,7 +80,6 @@ describe('Server - e2e', () => {
 
     it('should get a favourite by id', async () => {
       fetch.mockResponse(JSON.stringify(favouriteFixture), mockSuccessParams);
-      fetch.mockResponse(JSON.stringify(imagesFixtures[0]), mockSuccessParams);
 
       const response = await query({
         query: getFavourite,
@@ -92,6 +91,7 @@ describe('Server - e2e', () => {
 
     it('should create favourite', async () => {
       fetch.mockResponse(JSON.stringify(createFavouriteFixture), mockSuccessParams);
+      fetch.mockResponse(JSON.stringify(favouriteFixture), mockSuccessParams);
 
       const imageId = imagesFixtures[0].id;
       const response = await mutate({

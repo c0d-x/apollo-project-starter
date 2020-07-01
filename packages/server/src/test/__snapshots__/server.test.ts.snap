@@ -148,14 +148,14 @@ Object {
 exports[`Server - e2e Favourites should get a favourite by id 1`] = `
 Object {
   "getFavourite": Object {
-    "createdAt": null,
-    "id": "4uf",
+    "createdAt": "2020-07-01T07:37:33.000Z",
+    "id": "919",
     "image": Object {
       "breeds": Array [],
       "id": "4uf",
       "url": "https://cdn2.thecatapi.com/images/4uf.jpg",
     },
-    "reference": null,
+    "reference": "demo-320058",
   },
 }
 `;

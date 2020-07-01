@@ -9,17 +9,15 @@
         "start:dev": "npx nodemon"
     },
     "dependencies": {
+        "project-starter-datas": "1.0.0",
+        "project-starter-datasources": "1.0.0",
         "@graphql-modules/core": "^0.7.13",
         "@types/node": "^13.7.1",
         "apollo-server": "^2.9.7",
         "apollo-server-testing": "^2.12.0",
         "dotenv": "^8.2.0",
         "graphql": "^14.5.8",
-        "project-starter-datas": "1.0.0",
         "ts-node": "^8.6.2",
         "typescript": "^3.7.5"
-    },
-    "devDependencies": {
-        "project-starter-datasources": "1.0.0"
     }
 }
