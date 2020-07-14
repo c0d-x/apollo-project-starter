@@ -16,3 +16,14 @@ coverage
 *.yml
 *.graphql
 generated-models.ts
+*.png
+*.ico
+*.html
+*.css
+*.txt
+yarn.lock
+*.svg
+*.md
+*.gif
+Procfile
+build

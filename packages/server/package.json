@@ -4,6 +4,9 @@
     "description": "The project starter Apollo server",
     "license": "UNLICENSED",
     "private": true,
+    "engines": {
+      "yarn": ">= 1.16.0"
+    },
     "scripts": {
         "start": "npx ts-node src/index.ts",
         "start:dev": "npx nodemon"

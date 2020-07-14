@@ -1,0 +1,1 @@
+web: yarn workspace project-starter-client build && yarn workspace project-starter-client start

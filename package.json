@@ -1,11 +1,17 @@
 {
   "name": "project-starter",
   "version": "1.0.0",
-  "description": "GraphQL proxy server",
+  "description": "A GraphQL project starter",
   "license": "UNLICENSED",
+  "engines": {
+    "yarn": ">= 1.16.0"
+  },
   "scripts": {
-    "start": "yarn workspace project-starter-server start",
-    "start:dev": "yarn workspace project-starter-server start:dev",
+    "client:build": "yarn workspace project-starter-client build",
+    "client:start": "yarn workspace project-starter-client start",
+    "client:start:dev": "yarn workspace project-starter-client start:dev",
+    "server:start": "yarn workspace project-starter-server start",
+    "server:start:dev": "yarn workspace project-starter-server start:dev",
     "datas:update": "yarn workspace project-starter-datas codegen",
     "lint": "./node_modules/.bin/eslint ./packages/**",
     "test": "node --harmony ./node_modules/jest/bin/jest --runInBand"
@@ -23,10 +29,15 @@
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "jest": "^25.1.0",
     "jest-fetch-mock": "^3.0.3",
     "ts-jest": "^25.2.1"
