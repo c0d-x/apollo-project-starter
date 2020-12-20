@@ -5,6 +5,7 @@ import { createFavourite as createFavouriteMutation } from '../../graphql/mutati
 
 type ImageCardState = {
   isFavourite: boolean,
+  isLoading: boolean,
 };
 
 type ImageCardProps = {
@@ -17,6 +18,7 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
 
     this.state = {
       isFavourite: !!props.image.favouriteId,
+      isLoading: false,
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -24,6 +26,8 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
 
   async handleClick(event: any) {
     event.preventDefault();
+    // Start loader 
+    this.setState({ ...this.state, isLoading: true });
     // prevent from multiple clicks
     event.target.setAttribute('disabled', true);
 
@@ -38,7 +42,7 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
       },
     });
 
-    this.setState({ isFavourite: true });
+    this.setState({ isFavourite: true, isLoading: false });
   }
 
   renderCard() {
@@ -54,11 +58,11 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
         <div className="middle">
           <button
             id={`favourite-btn-${image.id}`}
-            className="favourite-btn"
+            className={'favourite-btn' + (this.state.isLoading ? ' loading' : '')}
             type="button"
             onClick={this.handleClick}
           >
-            Be my favourite !
+            Be my favourite !!
           </button>
         </div>
       </div>
@@ -76,7 +80,7 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
           src={image.url}
         />
         <div className="bottomright">
-          <i className="fa fa-heart heart-full" aria-hidden="true" />
+          <i className="fa fa-heart heart-full animated" aria-hidden="true" />
         </div>
       </div>
     );
@@ -97,5 +101,6 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
     );
   }
 }
+
 
 export default ImageCard;
