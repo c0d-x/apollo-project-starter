@@ -26,8 +26,10 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
 
   async handleClick(event: any) {
     event.preventDefault();
-    // Start loader 
+
+    // Start button loading animation 
     this.setState({ ...this.state, isLoading: true });
+
     // prevent from multiple clicks
     event.target.setAttribute('disabled', true);
 
@@ -40,13 +42,14 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
           imageId: image.id,
         },
       },
-    });
+    })
 
     this.setState({ isFavourite: true, isLoading: false });
   }
 
   renderCard() {
     const { image } = this.props;
+    const { isLoading } = this.state;
 
     return (
       <div className="card card-not-fav">
@@ -58,11 +61,11 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
         <div className="middle">
           <button
             id={`favourite-btn-${image.id}`}
-            className={'favourite-btn' + (this.state.isLoading ? ' loading' : '')}
+            className={'favourite-btn' + (isLoading ? ' loading' : '')}
             type="button"
             onClick={this.handleClick}
           >
-            Be my favourite !!
+            Be my favourite !
           </button>
         </div>
       </div>
@@ -101,6 +104,5 @@ class ImageCard extends React.Component<ImageCardProps, ImageCardState> {
     );
   }
 }
-
 
 export default ImageCard;
