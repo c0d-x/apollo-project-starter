@@ -25,6 +25,21 @@
   right: 16px;
   font-size: 18px;
 }
+.bottomright .animated {
+  transform: scale(1);
+  transform-origin: bottom right;
+  animation: shrink 1.5s ease-in-out;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(10);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .image {
   opacity: 1;
   display: block;
@@ -49,6 +64,10 @@
   font-size: 16px;
   padding: 16px 32px;
   border: 0px;
+  transition: background-color 3s;
+}
+.favourite-btn.loading {
+  background-color: transparent;
 }
 .heart-full {
   color: #F4044F;
