@@ -4,6 +4,7 @@ import { ApolloServer } from 'apollo-server';
 import { AppModules } from 'project-starter-datas/src/modules';
 
 const isProduction = process.env.NODE_ENV === 'production';
+const isTest = process.env.NODE_ENV === 'test';
 
 const server = new ApolloServer({
   modules: [AppModules],
@@ -21,7 +22,7 @@ const server = new ApolloServer({
 });
 
 // If we're in a test env, we'll manually start it in a test
-if (process.env.PORT !== 'test') {
+if (!isTest) {
   server
     .listen({ port: process.env.PORT || 4000 })
     .then(({ url }) => {
