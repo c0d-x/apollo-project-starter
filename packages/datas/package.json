@@ -20,7 +20,7 @@
     "graphql": "^14.5.8",
     "graphql-scalars": "^1.0.6",
     "graphql-toolkit": "^0.7.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.23",
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.5",
